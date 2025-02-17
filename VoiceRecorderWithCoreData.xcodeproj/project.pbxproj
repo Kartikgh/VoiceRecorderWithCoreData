@@ -14,6 +14,9 @@
 		4CCF11882D631D5600B88E90 /* VoiceRecorderWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF11862D631D5600B88E90 /* VoiceRecorderWithCoreData.xcdatamodeld */; };
 		4CCF118A2D631D5700B88E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF11892D631D5700B88E90 /* Assets.xcassets */; };
 		4CCF118D2D631D5700B88E90 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF118C2D631D5700B88E90 /* Base */; };
+		4CCF11952D63321400B88E90 /* VoiceRecorderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF11942D63321400B88E90 /* VoiceRecorderManager.swift */; };
+		4CCF11972D63323400B88E90 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF11962D63323400B88E90 /* CoreDataHelper.swift */; };
+		4CCF11992D63324E00B88E90 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF11982D63324E00B88E90 /* AudioPlayerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		4CCF11892D631D5700B88E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CCF118C2D631D5700B88E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CCF118E2D631D5700B88E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CCF11942D63321400B88E90 /* VoiceRecorderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderManager.swift; sourceTree = "<group>"; };
+		4CCF11962D63323400B88E90 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		4CCF11982D63324E00B88E90 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				4CCF117D2D631D5600B88E90 /* AppDelegate.swift */,
 				4CCF117F2D631D5600B88E90 /* SceneDelegate.swift */,
 				4CCF11812D631D5600B88E90 /* ViewController.swift */,
+				4CCF11942D63321400B88E90 /* VoiceRecorderManager.swift */,
+				4CCF11962D63323400B88E90 /* CoreDataHelper.swift */,
+				4CCF11982D63324E00B88E90 /* AudioPlayerManager.swift */,
 				4CCF11832D631D5600B88E90 /* Main.storyboard */,
 				4CCF11892D631D5700B88E90 /* Assets.xcassets */,
 				4CCF118B2D631D5700B88E90 /* LaunchScreen.storyboard */,
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCF11972D63323400B88E90 /* CoreDataHelper.swift in Sources */,
 				4CCF11822D631D5600B88E90 /* ViewController.swift in Sources */,
 				4CCF11882D631D5600B88E90 /* VoiceRecorderWithCoreData.xcdatamodeld in Sources */,
+				4CCF11952D63321400B88E90 /* VoiceRecorderManager.swift in Sources */,
 				4CCF117E2D631D5600B88E90 /* AppDelegate.swift in Sources */,
+				4CCF11992D63324E00B88E90 /* AudioPlayerManager.swift in Sources */,
 				4CCF11802D631D5600B88E90 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
