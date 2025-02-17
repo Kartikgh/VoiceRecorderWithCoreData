@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     let playerManager = AudioPlayerManager()
     
     var recordings: [VoiceRecording] = []
-    var currentUserID = "12345"
+    var currentUserID = "12345" // Use actual userId
     var recordedFileURL: URL?
     
     let recordButton = UIButton()
