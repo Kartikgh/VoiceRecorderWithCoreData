@@ -17,6 +17,7 @@
 		4CCF11952D63321400B88E90 /* VoiceRecorderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF11942D63321400B88E90 /* VoiceRecorderManager.swift */; };
 		4CCF11972D63323400B88E90 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF11962D63323400B88E90 /* CoreDataHelper.swift */; };
 		4CCF11992D63324E00B88E90 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF11982D63324E00B88E90 /* AudioPlayerManager.swift */; };
+		4CCF119B2D63419300B88E90 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF119A2D63419300B88E90 /* FileManagerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4CCF11942D63321400B88E90 /* VoiceRecorderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderManager.swift; sourceTree = "<group>"; };
 		4CCF11962D63323400B88E90 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		4CCF11982D63324E00B88E90 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		4CCF119A2D63419300B88E90 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +66,11 @@
 		4CCF117C2D631D5600B88E90 /* VoiceRecorderWithCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				4CCF119D2D63429F00B88E90 /* View */,
+				4CCF119C2D63428500B88E90 /* Manager */,
+				4CCF119E2D6342AB00B88E90 /* CoreData */,
 				4CCF117D2D631D5600B88E90 /* AppDelegate.swift */,
 				4CCF117F2D631D5600B88E90 /* SceneDelegate.swift */,
-				4CCF11812D631D5600B88E90 /* ViewController.swift */,
-				4CCF11942D63321400B88E90 /* VoiceRecorderManager.swift */,
-				4CCF11962D63323400B88E90 /* CoreDataHelper.swift */,
-				4CCF11982D63324E00B88E90 /* AudioPlayerManager.swift */,
 				4CCF11832D631D5600B88E90 /* Main.storyboard */,
 				4CCF11892D631D5700B88E90 /* Assets.xcassets */,
 				4CCF118B2D631D5700B88E90 /* LaunchScreen.storyboard */,
@@ -77,6 +78,32 @@
 				4CCF11862D631D5600B88E90 /* VoiceRecorderWithCoreData.xcdatamodeld */,
 			);
 			path = VoiceRecorderWithCoreData;
+			sourceTree = "<group>";
+		};
+		4CCF119C2D63428500B88E90 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF11942D63321400B88E90 /* VoiceRecorderManager.swift */,
+				4CCF11982D63324E00B88E90 /* AudioPlayerManager.swift */,
+				4CCF119A2D63419300B88E90 /* FileManagerHelper.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4CCF119D2D63429F00B88E90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF11812D631D5600B88E90 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CCF119E2D6342AB00B88E90 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF11962D63323400B88E90 /* CoreDataHelper.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +184,7 @@
 				4CCF117E2D631D5600B88E90 /* AppDelegate.swift in Sources */,
 				4CCF11992D63324E00B88E90 /* AudioPlayerManager.swift in Sources */,
 				4CCF11802D631D5600B88E90 /* SceneDelegate.swift in Sources */,
+				4CCF119B2D63419300B88E90 /* FileManagerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

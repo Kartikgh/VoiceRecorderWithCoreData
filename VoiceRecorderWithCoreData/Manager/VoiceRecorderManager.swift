@@ -19,7 +19,7 @@ class VoiceRecorderManager: NSObject, AVAudioRecorderDelegate {
             try AVAudioSession.sharedInstance().setActive(true)
             
             let fileName = "\(UUID().uuidString).m4a"
-            let fileURL = getDocumentsDirectory().appendingPathComponent(fileName)
+            let fileURL = FileManagerHelper.shared.getDocumentsDirectory().appendingPathComponent(fileName)
             
             self.audioFileName = fileURL
             
@@ -44,10 +44,5 @@ class VoiceRecorderManager: NSObject, AVAudioRecorderDelegate {
     func stopRecording() {
         audioRecorder?.stop()
         audioRecorder = nil
-    }
-    
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
     }
 }

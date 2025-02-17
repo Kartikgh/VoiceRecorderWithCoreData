@@ -11,7 +11,7 @@ class AudioPlayerManager: NSObject, AVAudioPlayerDelegate {
     var audioPlayer: AVAudioPlayer?
     
     func playRecording(filePath: String) {
-        let fileURL = getDocumentsDirectory().appendingPathComponent(filePath)
+        let fileURL = FileManagerHelper.shared.getDocumentsDirectory().appendingPathComponent(filePath)
         
         guard FileManager.default.fileExists(atPath: fileURL.path) else {
             print("Audio file not found at path: \(fileURL.path)")
@@ -25,10 +25,5 @@ class AudioPlayerManager: NSObject, AVAudioPlayerDelegate {
         } catch {
             print("Failed to play recording: \(error.localizedDescription)")
         }
-    }
-    
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
     }
 }
